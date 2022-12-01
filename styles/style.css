@@ -500,8 +500,8 @@ flex-wrap: wrap;
       }
       .middle-page picture{
         position: relative;
-        right:15%;
-        width:13rem;
+        right:10%;
+        width:22rem;
       }
       .middle-page div{
         position: relative;
@@ -512,12 +512,23 @@ flex-wrap: wrap;
         width: 15rem;
         position: relative;
         text-align: center;
-        left: 10%;
+        left: 20%;
       }
       .middle-page p{
         width: 5rem;
         position: relative;
         left: -6%;
+      }
+      .last-page{
+        left: 18%;
+      }
+      footer{
+        position: relative;
+        left: 4.5rem;
+      }
+      header .button-link{
+        position: relative;
+        left: 46%;
       }
     }
       
