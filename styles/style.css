@@ -184,7 +184,45 @@ footer {
   top: 3.5rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media(max-width: 767px) {
+  .middle-page p {
+    min-width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+    left: 1rem;
+  }
+}
+
+@media(max-width: 600px){
+.card{
+  position: relative;
+  top: -2rem;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.card h3{
+  max-width: 13rem;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 2rem;
+}
+.card p{
+  position: relative;
+  top: 3rem;
+}
+}
+
+@media(min-width: 768px) {
   header {
     margin: 0 48px 40px 48px;
   }
@@ -229,6 +267,9 @@ footer {
     align-self: center;
     justify-self: center;
     margin: 0;
+    width: 25rem;
+    position: relative;
+    left: 2rem;
   }
 
   .overlay {
@@ -247,10 +288,27 @@ footer {
   }
 
   .card {
+    text-align: justify;
+  }
+
+  .card h3{
+    text-align: left;
+    width: 15rem;
+  }
+  .card {
+    width:18rem;
     text-align: left;
   }
+  .alternate h3{
+    width: 10rem;
+  }
+  .alternate1 h3{
+    width: 11.1rem;
+  }
 }
-@media only screen and (min-width: 1000px) {
+
+
+@media(min-width: 1000px) {
   .landing-page picture {
     flex-basis: 50%;
   }
@@ -298,7 +356,7 @@ footer {
     background-color: #ff9b61;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media(min-width: 1300px) {
   .landing-page {
     padding: 0;
     position: relative;
@@ -329,6 +387,14 @@ footer {
     position: relative;
     height: 480px;
   }
+
+  .middle-page p{
+    width: 14rem;
+    position: relative;
+    left: -1.4rem;
+    width: 16rem;
+  }
+
   .middle-page::before {
     content: "";
     position: absolute;
@@ -348,8 +414,16 @@ footer {
 
   .last-page {
     grid-template: auto/repeat(4, auto);
-    column-gap: 32px;
+    column-gap: 0.3rem;
+    width: 100%;
+    position: relative;
+    left: 5%;
   }
+
+  .last-page p{
+    width: 15.8rem;
+  }
+
   .last-page h3 {
     width: 180px;
   }
@@ -364,3 +438,38 @@ footer {
     margin-right: 0;
   }
 }
+
+@media(max-width:1300px){
+.last-page{
+  width: 90%;
+  position: relative;
+  display: flex;
+}
+.card{
+  flex-direction: column;
+}
+.middle-page p{
+left: 0;
+}
+}
+@media(max-width:950px){
+.last-page{
+left: -5rem;
+flex-wrap: wrap;
+}
+}
+@media(max-width:850px){
+  .last-page{
+  left: -3rem;
+  }
+  }
+@media(max-width:800px){
+  .last-page{
+   left: -2rem;
+   }
+   }
+@media(max-width:768px){
+  .last-page{
+    left: 0;
+  }
+     }
