@@ -166,7 +166,6 @@ header .button-link {
 .card {
   text-align: center;
 }
-
 .icon {
   display: inline-block;
   background-color: #f26818;
@@ -425,7 +424,8 @@ footer {
   }
 
   .last-page h3 {
-    width: 180px;
+    width: 13rem;
+    font-size: 1.4rem;
   }
 
   body {
@@ -444,9 +444,15 @@ footer {
   width: 90%;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .card{
   flex-direction: column;
+  min-width: 20rem;
+}
+.card h3{
+  font-size: 1.2rem;
 }
 .middle-page p{
 left: 0;
@@ -454,16 +460,10 @@ left: 0;
 }
 @media(max-width:950px){
 .last-page{
-left: -5rem;
 flex-wrap: wrap;
 }
 }
-@media(max-width:850px){
-  .last-page{
-  left: -3rem;
-  }
-  }
-  @media(max-width:821px) and (min-width:768px ){
+@media(max-width:821px) and (min-width:768px ){
   .landing-page p{
     width:20rem;
   }
@@ -474,11 +474,11 @@ flex-wrap: wrap;
     max-width: 28rem;
   }
    }
-@media(max-width:800px){
+   @media(max-width:783px){
   .last-page{
-   left: -2rem;
-   }
-   }
+    column-gap: 1rem;
+    }
+  }
 @media(max-width:768px){
   .last-page{
     left: 0;
@@ -486,6 +486,11 @@ flex-wrap: wrap;
   .middle-page{
     top: 3rem;
   }
+  }
+  @media(max-width:550px){
+    .card h3{
+      max-width: 10rem;
+    }
   }
   @media(max-width:410px){
     .landing-page picture{
