@@ -212,12 +212,6 @@ footer {
   max-width: 13rem;
   text-align: center;
   margin: 0 auto;
-  position: relative;
-  top: 2rem;
-}
-.card p{
-  position: relative;
-  top: 3rem;
 }
 }
 
@@ -311,7 +305,7 @@ footer {
   .landing-page picture {
     flex-basis: 50%;
   }
-
+  
   .middle-page {
     grid-template: auto auto/1fr 2fr 2fr;
     row-gap: 24px;
@@ -353,6 +347,9 @@ footer {
   }
   .landing-page .button-link:hover {
     background-color: #ff9b61;
+  }
+  .card h3{
+    width: 10rem;
   }
 }
 @media(min-width: 1300px) {
@@ -458,9 +455,12 @@ footer {
 left: 0;
 }
 }
-@media(max-width:950px){
+@media(max-width:970px){
 .last-page{
 flex-wrap: wrap;
+}
+.card h3{
+  width: 10rem;
 }
 }
 @media(max-width:821px) and (min-width:768px ){
@@ -485,6 +485,10 @@ flex-wrap: wrap;
   }
   .middle-page{
     top: 3rem;
+  }
+  .card h3{
+    margin: 0 auto;
+    margin-top: 1rem;
   }
   }
   @media(max-width:550px){
@@ -520,12 +524,12 @@ flex-wrap: wrap;
         left: 20%;
       }
       .middle-page p{
-        width: 5rem;
+        width: 20%;
         position: relative;
-        left: -6%;
+        left: -4%;
       }
       .last-page{
-        left: 18%;
+        left: 17%;
       }
       footer{
         position: relative;
